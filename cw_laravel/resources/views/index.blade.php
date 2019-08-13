@@ -12,102 +12,19 @@
 
 		<!-- Latest compiled JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="/css/all.min.css">
+      <link rel="stylesheet" href="/css/all.min.css">
     	<link rel="stylesheet" href="/css/styles.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <!-- Styles -->
-        <style>
-		
-		<!-- inicio style original -->
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-			<!-- fin style original-->
-        </style>
-    </head>
-    <body>
-        <!--<div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Entrar</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Registrarme</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-        </div>-->
-    <header class="page-headerb">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+  <header class="page-headerb">
     <div class="page-header-containerb containerb">
       <!--<a id="logo" href="index.php">ConstruWorld</a>-->
 	  <a id="logo" href="index.php" style="padding-left: 20px;"><img src="images/C2_t.png" style="max-width:80%; height:auto; " alt="Logo"></a>
       <nav class="main-nav">
         <ul>
-		<div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Entrar</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Registrarme</a>
-                        @endif
-                    @endauth
-                </div>
-          <!--<li><a class="nav-link nav1" href="preguntas">Preguntas Frecuentes</a></li>
-          <li><a class="nav-link nav1" href="servicios2">Servicios</a></li>-->
+          <li><a class="nav-link nav1" href="preguntas">Preguntas Frecuentes</a></li>
+          <li><a class="nav-link nav1" href="servicios2">Servicios</a></li>
         </ul>
       </nav>
     </div>

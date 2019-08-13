@@ -44,6 +44,7 @@
     	<p class= "" style="font-size: 20px;"><?= $oneService['title'] ?></p>
       <div class="construction-icons">
         <i class="fa fa-<?=$oneService['icon']?>"></i>
+		<i class="fa fa-hard-hat"></i>
       </div>
     	<p class="card-text"><?= substr($oneService['description'], 0, 150) ?>...</p>
       <a href="profesiones.php?profesion=<?= $oneService['profesion'] ?>">Ver mas</a>
