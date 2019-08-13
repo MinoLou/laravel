@@ -13,6 +13,10 @@
 
 //Rutas ConstruWorld
 
+Route::get('/', function () {
+    return view('index');
+});
+
 Route::get('/cw', function () {
     return view('index');
 });
@@ -26,4 +30,6 @@ Route::get('/servicios2', function () {
     return view('servicios2');
 });
 
-//Fin pruebas ConstruWorld
+Route::get("/servicios2", "usuariosController@dibujar_servicios");
+
+//Fin rutas ConstruWorld

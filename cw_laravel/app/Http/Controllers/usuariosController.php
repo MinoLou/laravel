@@ -3,15 +3,13 @@
 namespace App\Http\Controllers;
 use App\Http\Requests;
 use Illuminate\Http\Request;
-use App\maccaModel;
+use App\usuariosModel;
 
-class maccaController extends Controller
+class usuariosController extends Controller
 {
     //
-	public function paul(){
-		echo "Este string se escribe en el controlador";
-		$base = usuariosModel::all();
-		//dd($base);
-		return view ('index.', compact('base'));
+	public function dibujar_servicios(){
+		require_once 'serviceList.php'; //Hay un $serviceList = sarasa;
+		return view('servicios2', compact('serviceList'));
 	}
 }
