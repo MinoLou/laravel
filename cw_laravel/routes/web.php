@@ -30,6 +30,14 @@ Route::get('/servicios2', function () {
     return view('servicios2');
 });
 
+Route::get('/log1', function () {
+    return view('log1');
+});
+
+Route::get('/reg1', function () {
+    return view('reg1');
+});
+
 Route::get("/servicios2", "usuariosController@dibujar_servicios");
 
 //Fin rutas ConstruWorld
