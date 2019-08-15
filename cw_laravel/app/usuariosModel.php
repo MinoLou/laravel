@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class maccaModel extends Model
+class usuariosModel extends Model
 {
     //
 	public $table = "usuarios";

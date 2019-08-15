@@ -38,6 +38,8 @@ Route::get('/reg1', function () {
     return view('reg1');
 });
 
+Auth::routes();
+
 Route::get("/servicios2", "usuariosController@dibujar_servicios");
 
 //Fin rutas ConstruWorld
