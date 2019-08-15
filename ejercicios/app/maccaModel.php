@@ -11,4 +11,5 @@ class maccaModel extends Model
 	public $primaryKey = "id";
 	public $timestamps = false;
 	public $guarded = [];
+	public $fillable = ['prueba'];
 }
