@@ -43,6 +43,10 @@ Route::get('/servicios2', function () {
     return view('servicios2');
 });
 
+Route::get('/register', function () {
+    return view('auth/register');
+});
+
 //Fin pruebas ConstruWorld
 
 Route::get("/practica", "PracticaDH@listado");

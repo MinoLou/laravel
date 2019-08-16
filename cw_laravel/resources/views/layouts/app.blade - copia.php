@@ -1,5 +1,3 @@
-<?php require_once('header.php');?>
-
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
@@ -78,3 +76,5 @@
             @yield('content')
         </main>
     </div>
+</body>
+</html>

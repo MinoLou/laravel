@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    ¡Te logueaste, wacho pistola!
+                    ¡Estás logueado!
                 </div>
             </div>
         </div>

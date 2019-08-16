@@ -38,6 +38,10 @@ Route::get('/reg1', function () {
     return view('reg1');
 });
 
+Route::get('/home', function () {
+    return view('home');
+});
+
 Auth::routes();
 
 Route::get("/servicios2", "usuariosController@dibujar_servicios");

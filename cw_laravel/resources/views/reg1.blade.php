@@ -6,8 +6,8 @@
       <p>Registrate acá para que todos puedan contar con tus servicios o para contratar servicios</p>
 
       <div class="button-group">
-        <a href="regusu.php" class="btn btn-warning">Registrarme como usuario</a>
-        <a href="registro.php" class="btn btn-warning">Registrarme como prestador</a>
+        <a href="register" class="btn btn-warning">Registrarme como usuario</a>
+        <a href="registro" class="btn btn-warning">Registrarme como prestador</a>
       </div>
     </section>
   </div>
