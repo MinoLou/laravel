@@ -15,6 +15,9 @@
                     @endif
 
                     ¡Estás logueado!
+					<?php 
+					 
+					?>
                 </div>
             </div>
         </div>

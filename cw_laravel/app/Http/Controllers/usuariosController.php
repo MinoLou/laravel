@@ -12,4 +12,11 @@ class usuariosController extends Controller
 		require_once 'serviceList.php'; //Hay un $serviceList = sarasa;
 		return view('servicios2', compact('serviceList'));
 	}
+	
+	/*public function varsesion(Request $request)
+	{
+		$var_sesion = $request->input();
+		return view('sesion', compact('var_sesion'));
+	}
+	*/
 }

@@ -46,4 +46,6 @@ Auth::routes();
 
 Route::get("/servicios2", "usuariosController@dibujar_servicios");
 
+//Route::get("/sesion", "usuariosController@varsesion");
+
 //Fin rutas ConstruWorld

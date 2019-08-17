@@ -53,14 +53,10 @@
   
    <!-- Fin head original -->
 
-<!--<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">-->
-<!--<head>
-    
-</head>-->
-<!--<body>-->
-    <div id="app">
+    <div id="app">				<!-- Esto aparentemente renderiza todo el contenido de la página que extiende a esta. -->
         <main class="py-4">
             @yield('content')
         </main>
     </div>
+	
+	<?php require('footer.php'); ?>
