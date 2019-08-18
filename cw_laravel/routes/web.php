@@ -48,4 +48,6 @@ Route::get("/servicios2", "usuariosController@dibujar_servicios");
 
 //Route::get("/sesion", "usuariosController@varsesion");
 
+Route::get("/leervariables", "HomeController@show");
+
 //Fin rutas ConstruWorld

@@ -18,6 +18,7 @@
 				<p>País</p>
 				<p>Email</p>
 				<P>Tipo de usuario</p>
+				<?php var_dump("ML");?>
 			</h3>
 		</div>
     </div>

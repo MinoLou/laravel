@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Http\Controllers\Controller;
+
 class HomeController extends Controller
 {
     /**
@@ -23,6 +25,15 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+		$data = $request->session()->all();
+		var_dump($data);
+        return view('home', compact('data'));
     }
+	
+	//public function show(Request $request)
+    //{
+        //$value = $request->session()->get('key');
+
+        
+    //}
 }
