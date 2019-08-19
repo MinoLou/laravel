@@ -1,6 +1,6 @@
-<?php require('header.php'); ?>
+@extends('layouts.apps')
 
-<!-- Servicios -->
+@section('content')
 <div class="containerb" >
     <?php 
     session_start();
@@ -22,5 +22,4 @@
   <?php endforeach; ?>
   </div>
 </div>
-
-<?php require('footer.php'); ?>
+@endsection
