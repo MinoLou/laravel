@@ -20,6 +20,8 @@ class usuariosController extends Controller
 		$id_usuario--; //Pues posición en array arranca de cero y contabilización en base de datos en uno.
 		$base = usuariosModel::all();
 		$datos_usuario = array("name" => $base[$id_usuario]['name'], "surname" => $base[$id_usuario]['surname'], "dni" => $base[$id_usuario]['dni'], "birthdate" => $base[$id_usuario]['birthdate'], "email" => $base[$id_usuario]['email']);
+		session_start();
+		$_SESSION['name'] = $datos_usuario['name'];
 		return view ('home', compact('base', 'datos_usuario'));
 	}
 	

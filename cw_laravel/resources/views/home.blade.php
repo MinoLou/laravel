@@ -17,6 +17,7 @@
 				<p><?php echo $datos_usuario["dni"]?></p>
 				<p><?php echo $datos_usuario["birthdate"]?></p>
 				<p><?php echo $datos_usuario["email"]?></p>
+				<p><?php echo "SESION: " . $_SESSION['name'];?></p>
 			</h3>
 		</div>
     </div>
