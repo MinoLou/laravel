@@ -42,6 +42,18 @@ Route::get('/home', function () {
     return view('home');
 });
 
+//Rutas registro y login como prestador
+
+Route::get('/registro', function () {
+    return view('auth/regpres');
+});
+
+Route::get('/loginpres', function () {
+    return view('auth/loginpres');
+});
+
+//Fin rutas registro y login como prestador
+
 Auth::routes();
 
 Route::get("/servicios2", "usuariosController@dibujar_servicios");

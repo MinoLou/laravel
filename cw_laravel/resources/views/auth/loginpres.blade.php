@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Ingresá, para contratar servicios') }}</div>
+                <div class="card-header">{{ __('Ingresá, para contratar servicios (no está usando tabla correcta)') }}</div>
 
                 <div>
 					<br>

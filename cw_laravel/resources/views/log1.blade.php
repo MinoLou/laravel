@@ -10,7 +10,7 @@ require('header.php');
 
 		<div class="button-group">
 			<a href="login" class="btn btn-warning">Entrar como usuario</a>
-			<a href="login.php" class="btn btn-warning">Entrar como prestador</a>
+			<a href="loginpres" class="btn btn-warning">Entrar como prestador</a>
 		</div>
 	</section>
 </div>

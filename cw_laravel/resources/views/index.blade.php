@@ -42,7 +42,7 @@
 <div class="containerb">
   <section class="intro-text">
     <!--<h1>Nuestro Trabajo</h1>-->
-	<h1>Solo a modo de demostración de vista, no funciona el sitio completo</h1>
+	<h1>Nuestro trabajo</h1>
     <p>Poner en contacto a los mejores profesionales del rubro y coordinarlos para llevar a cabo proyectos eficientemente.</p>
   </section>
 
