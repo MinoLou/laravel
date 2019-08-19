@@ -8,7 +8,7 @@
                 <div class="card-header">{{ __('Registrate acá, para poder contratar servicios') }}</div>
 
                 <div>
-                    <form method="POST" action="{{ route('register') }}">
+                    <form method="POST" action="{{ route('register') }}" enctype="multipart/form-data">
                         @csrf
 						<br>
                         <div class="form-group row">
@@ -116,6 +116,13 @@
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                             </div>
                         </div>
+						
+						<div>
+							<label class="col-md-4 col-form-label text-md-right"for="archivo">Imagen de perfil (bmp): </label>
+							<div class="col-md-6">
+								<input class="form-control" type="file" name="archivo"><br>
+							</div>
+						</div>
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">

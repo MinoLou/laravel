@@ -22,6 +22,10 @@ class usuariosController extends Controller
 		$datos_usuario = array("name" => $base[$id_usuario]['name'], "surname" => $base[$id_usuario]['surname'], "dni" => $base[$id_usuario]['dni'], "birthdate" => $base[$id_usuario]['birthdate'], "email" => $base[$id_usuario]['email']);
 		session_start();
 		$_SESSION['name'] = $datos_usuario['name'];
+		$_SESSION['surname'] = $datos_usuario['surname'];
+		$_SESSION['dni'] = $datos_usuario['dni'];
+		$_SESSION['birthdate'] = $datos_usuario['birthdate'];
+		$_SESSION['email'] = $datos_usuario['email'];
 		return view ('home', compact('base', 'datos_usuario'));
 	}
 	

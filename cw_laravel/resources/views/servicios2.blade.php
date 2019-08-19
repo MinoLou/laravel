@@ -2,6 +2,12 @@
 
 <!-- Servicios -->
 <div class="containerb" >
+    <?php 
+    session_start();
+    if(isset($_SESSION['name'])){
+		echo "DATOS SESION: " . $_SESSION['name'] . " " . $_SESSION['surname'] . " " . $_SESSION['dni'] . " " . $_SESSION['email'] . " ";
+	} else echo "NO DATA";
+	?>
   <div class="servicios-list" style="margin-top: 20px;">
   <!-- Los servicios -->
   <?php foreach ($serviceList as $oneService) : ?>
