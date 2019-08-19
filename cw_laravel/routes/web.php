@@ -39,14 +39,19 @@ Route::get('/reg1', function () {
 });
 
 Route::get('/home', function () {
+	echo "Probando home";
     return view('home');
 });
+
+Route::get("/home", "usuariosController@leerbase");
 
 //Rutas registro y login como prestador
 
 Route::get('/registro', function () {
     return view('auth/regpres');
 });
+
+Route::get("/registro", "prestadoresController@");
 
 Route::get('/loginpres', function () {
     return view('auth/loginpres');
