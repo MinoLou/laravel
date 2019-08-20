@@ -6,7 +6,7 @@
     session_start();
     if(isset($_SESSION['name'])){
 		echo "DATOS SESION: " . $_SESSION['name'] . " " . $_SESSION['surname'] . " " . $_SESSION['dni'] . " " . $_SESSION['email'] . " ";
-	} else echo "NO DATA";
+	} else echo "No hay variables de sesión";
 	?>
   <div class="servicios-list" style="margin-top: 20px;">
   <!-- Los servicios -->

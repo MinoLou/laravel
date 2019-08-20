@@ -1,8 +1,6 @@
-<?php require('header.php'); ?>
+@extends('layouts.apps')
 
-<!--<div class="containerb">-->
-
-<!-- Slideshow container -->
+@section('content')
 <div class="slideshow-container">
 
   <!-- Full-width images with number and caption text -->
@@ -99,5 +97,4 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 	</script>
-
-<?php require('footer.php'); ?>
+@endsection

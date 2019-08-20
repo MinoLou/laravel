@@ -1,6 +1,7 @@
-<?php require('header.php'); ?>
+@extends('layouts.apps')
 
-<div> <!-- section hace bolonqui -->
+@section('content')
+<div>
 <h1 style="margin-left: 40px;">Preguntas frecuentes</h1>
 </div>
 		<div class="container">
@@ -114,5 +115,4 @@
 	</div>
 </div>
 </div>
-
-<?php require('footer.php'); ?>
+@endsection

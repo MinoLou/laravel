@@ -36,4 +36,11 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
+	
+	/*public function logout(){
+		session_start();
+		session_destroy();
+		route('logout');
+		return view ('index');
+	}*/
 }

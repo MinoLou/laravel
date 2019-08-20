@@ -45,6 +45,10 @@ Route::get('/home', function () {
 
 Route::get("/home", "usuariosController@leerbase");
 
+Route::get('/contacto', function () {
+    return view('contacto');
+});
+
 //Rutas registro y login como prestador
 
 Route::get('/registro', function () {
@@ -66,5 +70,7 @@ Route::get("/servicios2", "usuariosController@dibujar_servicios");
 //Route::get("/sesion", "usuariosController@varsesion");
 
 Route::get("/leervariables", "HomeController@show");
+
+Route::get('/action_page', "HomeController@cw_form");
 
 //Fin rutas ConstruWorld
