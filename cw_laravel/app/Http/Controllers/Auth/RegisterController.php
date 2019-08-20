@@ -73,7 +73,7 @@ class RegisterController extends Controller
 
 				//$miArchivo = dirname(__FILE__);
 				//$miArchivo = $miArchivo. "\\". "usuarios" . "\\" . "JosePaso.bmp"; //El nombre de la foto es el nombre del usuario. Hay que crear el directorio.
-				$miArchivo = "usuarios/" . $data['name'] . $data['surname']. ".bmp";
+				$miArchivo = "usuarios/" . $data['name'] . $data['surname']. "." . $ext;
 				//echo "miArchivo es: " . $miArchivo . "<br>";
 				if($ext=="jpg" || $ext=="bmp"){
 					move_uploaded_file($archivo, $miArchivo);
@@ -95,6 +95,7 @@ class RegisterController extends Controller
 			'birthdate' => $data['birthdate'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+			'ext' => $ext,
         ]);
     }
 }

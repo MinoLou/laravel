@@ -8,9 +8,7 @@ else
 {
     //echo 'mail() has been disabled';
 }
-?>
 
-<?php
     /*
      * Enable error reporting
      */
@@ -59,13 +57,3 @@ else
 		echo($mensaje_error_total);
 	} 
 ?>
-<!-- incluye aqui tu propio mensaje de Éxito-->
- 
-<!--Gracias! Nos pondremos en contacto contigo a la brevedad -->
- 
- 
-<!-- ?php -->
- 
-<!-- } -->
- 
-<!-- ? -->

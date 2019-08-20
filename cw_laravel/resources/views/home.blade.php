@@ -11,7 +11,7 @@
                     <!--¡Estás logueado!-->
 		<div class='main-profile'>
 		<!--<img class='profile-picture' style='margin-top: 10px;' height='200px' src='images/bill_gates.jpg' alt='Usuario'>-->
-		<?php $path = "usuarios/" . $_SESSION['name'] . $_SESSION['surname'] .".bmp";?>
+		<?php $path = "usuarios/" . $_SESSION['name'] . $_SESSION['surname'] . "." . $_SESSION['ext'];?>
 		<img class='profile-picture' style='margin-top: 10px;' height='200px' src='<?php echo $path; ?>' alt='Usuario'>
 		<!--<h2 style='text-align:center;'>Bill Gates</h2>-->
 			<h3 style='text-align:center;'>
@@ -25,8 +25,6 @@
 				<p><?php echo "SESION: " . $_SESSION['email'] . "<br>";?></p>
 				<p><?php echo "SESION: " . $_SESSION['birthdate'] . "<br>";?></p>
 				<p><?php echo $path . "<br>";?></p>
-				
-				
 			</h3>
 		</div>
     </div>
