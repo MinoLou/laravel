@@ -67,6 +67,48 @@
                             </div>
                         </div>
 						
+						<div class="form-group row" style="display:none;">
+                            <label for="userkind" class="col-md-4 col-form-label text-md-right">{{ __('Tipo de usuario') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="userkind" type="text" class="form-control @error('userkind') is-invalid @enderror" name="userkind" value="usuario" required autocomplete="userkind" autofocus>
+
+                                @error('userkind')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+						
+						<div class="form-group row" style="display:none;">
+                            <label for="profesion" class="col-md-4 col-form-label text-md-right">{{ __('Profesión') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="profesion" type="text" class="form-control @error('profesion') is-invalid @enderror" name="profesion" value="-" required autocomplete="profesion" autofocus>
+
+                                @error('profesion')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+						
+						<div class="form-group row">
+                            <label for="barrio" class="col-md-4 col-form-label text-md-right">{{ __('Barrio') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="barrio" type="text" class="form-control @error('barrio') is-invalid @enderror" name="barrio" value="{{ old('barrio') }}" required autocomplete="barrio" autofocus>
+
+                                @error('barrio')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+						
 						<div class="form-group row">
                             <label for="birthdate" class="col-md-4 col-form-label text-md-right">{{ __('Fecha de Nacimiento') }}</label>
 

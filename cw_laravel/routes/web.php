@@ -55,7 +55,7 @@ Route::get('/registro', function () {
     return view('auth/regpres');
 });
 
-Route::get("/registro", "prestadoresController@");
+//Route::get("/registro", "prestadoresController@");
 
 Route::get('/loginpres', function () {
     return view('auth/loginpres');

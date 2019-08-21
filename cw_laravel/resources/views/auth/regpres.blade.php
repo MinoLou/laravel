@@ -5,10 +5,10 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Registrate acá, para poder ofrecer servicios (no está usando tabla correcta)') }}</div>
+                <div class="card-header">{{ __('Registrate acá, para poder ofrecer servicios') }}</div>
 
                 <div>
-                    <form method="POST" action="{{ route('register') }}">
+                    <form method="POST" action="{{ route('register') }}" enctype="multipart/form-data">
                         @csrf
 						<br>
                         <div class="form-group row">
@@ -54,12 +54,54 @@
                         </div>
 						
 						<div class="form-group row">
-                            <label for="genre" class="col-md-4 col-form-label text-md-right">{{ __('Género') }}</label>
+                            <label for="genero" class="col-md-4 col-form-label text-md-right">{{ __('Género') }}</label>
 
                             <div class="col-md-6">
-                                <input id="genre" type="text" class="form-control @error('genre') is-invalid @enderror" name="genre" value="{{ old('genre') }}" required autocomplete="genero" autofocus>
+                                <input id="genero" type="text" class="form-control @error('genero') is-invalid @enderror" name="genero" value="{{ old('genero') }}" required autocomplete="genero" autofocus>
 
-                                @error('genre')
+                                @error('genero')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+						
+						<div class="form-group row" style="display:none;">
+                            <label for="userkind" class="col-md-4 col-form-label text-md-right">{{ __('Tipo de usuario') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="userkind" type="text" class="form-control @error('userkind') is-invalid @enderror" name="userkind" value="prestador" required autocomplete="userkind" autofocus>
+
+                                @error('userkind')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+						
+						<div class="form-group row">
+                            <label for="profesion" class="col-md-4 col-form-label text-md-right">{{ __('Profesión') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="profesion" type="text" class="form-control @error('profesion') is-invalid @enderror" name="profesion" value="{{ old('profesion') }}" required autocomplete="profesion" autofocus>
+
+                                @error('profesion')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+						
+						<div class="form-group row">
+                            <label for="barrio" class="col-md-4 col-form-label text-md-right">{{ __('Barrio') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="barrio" type="text" class="form-control @error('barrio') is-invalid @enderror" name="barrio" value="{{ old('barrio') }}" required autocomplete="barrio" autofocus>
+
+                                @error('barrio')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -116,6 +158,13 @@
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                             </div>
                         </div>
+						
+						<div>
+							<label class="col-md-4 col-form-label text-md-right"for="archivo">Imagen de perfil (bmp): </label>
+							<div class="col-md-6">
+								<input class="form-control" type="file" name="archivo"><br>
+							</div>
+						</div>
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
