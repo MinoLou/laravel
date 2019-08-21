@@ -19,11 +19,17 @@
 				<p><?php echo $datos_usuario["dni"]?></p>
 				<p><?php echo $datos_usuario["birthdate"]?></p>
 				<p><?php echo $datos_usuario["email"]?></p>
+				<p><?php echo $datos_usuario["userkind"]?></p>
+				<p><?php echo $datos_usuario["profesion"]?></p>
+				<p><?php echo $datos_usuario["barrio"]?></p>
 				<p><?php echo "SESION: " . $_SESSION['name'] . "<br>";?></p>
 				<p><?php echo "SESION: " . $_SESSION['surname'] . "<br>";?></p>
 				<p><?php echo "SESION: " . $_SESSION['dni'] . "<br>";?></p>
 				<p><?php echo "SESION: " . $_SESSION['email'] . "<br>";?></p>
 				<p><?php echo "SESION: " . $_SESSION['birthdate'] . "<br>";?></p>
+				<p><?php echo "SESION: " . $_SESSION['userkind'] . "<br>";?></p>
+				<p><?php echo "SESION: " . $_SESSION['profesion'] . "<br>";?></p>
+				<p><?php echo "SESION: " . $_SESSION['barrio'] . "<br>";?></p>
 				<p><?php echo $path . "<br>";?></p>
 			</h3>
 		</div>
