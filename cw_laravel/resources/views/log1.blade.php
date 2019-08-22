@@ -9,8 +9,7 @@ require('header.php');
 		<p>Entrá acá para que todos puedan contar con tus servicios o para contratar servicios</p>
 
 		<div class="button-group">
-			<a href="login" class="btn btn-warning">Entrar como usuario</a>
-			<a href="loginpres" class="btn btn-warning">Entrar como prestador</a>
+			<a href="login" class="btn btn-warning">Entrar al mágico mundo de la construcción</a>
 		</div>
 	</section>
 </div>

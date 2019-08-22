@@ -3,10 +3,9 @@
 @section('content')
 <div class="containerb" >
     <?php 
-    session_start();
     if(isset($_SESSION['name'])){
-		echo "DATOS SESION: " . $_SESSION['name'] . " " . $_SESSION['surname'] . " " . $_SESSION['dni'] . " " . $_SESSION['email'] . " ";
-	} else echo "No hay variables de sesión";
+		echo "Iniciaste sesión como: " . $_SESSION['name'] . " " . $_SESSION['surname'] . " <br>DNI: " . $_SESSION['dni'] . " <br>Correo: " . $_SESSION['email'] . " ";
+	} else echo "No iniciaste sesión";
 	?>
   <div class="servicios-list" style="margin-top: 20px;">
   <!-- Los servicios -->
@@ -17,7 +16,7 @@
         <i class="fa fa-<?=$oneService['icon']?>"></i>
       </div>
     	<p class="card-text"><?= substr($oneService['description'], 0, 150) ?>...</p>
-      <a href="profesiones.php?profesion=<?= $oneService['profesion'] ?>">Ver mas</a>
+      <a href="/<?= $oneService['profesion'] ?>">Ver mas</a>
   	</div>
   <?php endforeach; ?>
   </div>

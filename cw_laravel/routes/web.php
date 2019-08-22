@@ -61,11 +61,34 @@ Route::get('/loginpres', function () {
     return view('auth/loginpres');
 });
 
+
 //Fin rutas registro y login como prestador
 
 Auth::routes();
 
 Route::get("/servicios2", "usuariosController@dibujar_servicios");
+
+//Route::get('/profesiones/{esp}', ['uses' =>'usuariosController@dibujar_profesionales']);
+
+//Route::get("/profesiones/{esp}", "usuariosController@dibujar_profesionales");
+
+Route::get("/profesiones", "usuariosController@dibujar_profesionales");
+
+//Profesiones
+
+Route::get("/carpinteros", "usuariosController@dibujar_carpinteros");
+
+Route::get("/gasistas", "usuariosController@dibujar_gasistas");
+
+Route::get("/plomeros", "usuariosController@dibujar_plomeros");
+
+Route::get("/electricistas", "usuariosController@dibujar_electricistas");
+
+Route::get("/maestros-mayores-de-obra", "usuariosController@dibujar_mmos");
+
+Route::get("/arquitectos", "usuariosController@dibujar_arquitectos");
+
+//Fin profesiones
 
 //Route::get("/sesion", "usuariosController@varsesion");
 

@@ -25,8 +25,9 @@
         <ul>
           <li><a class="nav-link nav1" href="preguntas">Preguntas Frecuentes</a></li>
           <li><a class="nav-link nav1" href="servicios2">Servicios</a></li>
-		  <li><a class='nav-link nav1' href='reg1'>Registracion</a></li>
-		  <li><a class='nav-link nav1' href='log1'>Login</a></li>
+		  <?php if(!isset($_SESSION['nombre'])){
+					echo "<li><a class='nav-link nav1' href='reg1'>Registracion</a></li>
+		  <li><a class='nav-link nav1' href='log1'>Login</a></li>";} ?>
         </ul>
       </nav>
     </div>

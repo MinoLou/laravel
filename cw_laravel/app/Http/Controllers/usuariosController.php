@@ -13,6 +13,125 @@ class usuariosController extends Controller
 		return view('servicios2', compact('serviceList'));
 	}
 	
+	public function dibujar_profesionales(){
+		require_once 'profesionesList.php'; //Hay un $serviceList = sarasa;
+		$base = usuariosModel::all();
+		$cnt = 0;
+		$profesionales = [];
+		foreach($base as $clave=>$valor){
+			
+			if($base[$clave]['userkind'] == 'prestador')
+			{
+			 $profesionales[$cnt++] = array("name" => $base[$clave]['name'], "surname" => $base[$clave]['surname'], "dni" => $base[$clave]['dni'],
+			 "birthdate" => $base[$clave]['birthdate'], "email" => $base[$clave]['email'], "ext" => $base[$clave]['ext'],
+			 "userkind" => $base[$clave]['userkind'], "profesion" => $base[$clave]['profesion'], "barrio" => $base[$clave]['barrio']);
+			}			
+		}
+		return view('profesiones', compact('profesionales'));
+	}
+	
+	public function dibujar_carpinteros(){
+		require_once 'profesionesList.php'; //Hay un $serviceList = sarasa;
+		$base = usuariosModel::all();
+		$cnt = 0;
+		$profesionales = [];
+		foreach($base as $clave=>$valor){
+			
+			if($base[$clave]['profesion'] == 'carpintero')
+			{
+			 $profesionales[$cnt++] = array("name" => $base[$clave]['name'], "surname" => $base[$clave]['surname'], "dni" => $base[$clave]['dni'],
+			 "birthdate" => $base[$clave]['birthdate'], "email" => $base[$clave]['email'], "ext" => $base[$clave]['ext'],
+			 "userkind" => $base[$clave]['userkind'], "profesion" => $base[$clave]['profesion'], "barrio" => $base[$clave]['barrio']);
+			}			
+		}
+		return view('profesiones', compact('profesionales'));
+	}
+	
+	public function dibujar_gasistas(){
+		require_once 'profesionesList.php'; //Hay un $serviceList = sarasa;
+		$base = usuariosModel::all();
+		$cnt = 0;
+		$profesionales = [];
+		foreach($base as $clave=>$valor){
+			
+			if($base[$clave]['profesion'] == 'gasista')
+			{
+			 $profesionales[$cnt++] = array("name" => $base[$clave]['name'], "surname" => $base[$clave]['surname'], "dni" => $base[$clave]['dni'],
+			 "birthdate" => $base[$clave]['birthdate'], "email" => $base[$clave]['email'], "ext" => $base[$clave]['ext'],
+			 "userkind" => $base[$clave]['userkind'], "profesion" => $base[$clave]['profesion'], "barrio" => $base[$clave]['barrio']);
+			}			
+		}
+		return view('profesiones', compact('profesionales'));
+	}
+	
+	public function dibujar_plomeros(){
+		require_once 'profesionesList.php'; //Hay un $serviceList = sarasa;
+		$base = usuariosModel::all();
+		$cnt = 0;
+		$profesionales = [];
+		foreach($base as $clave=>$valor){
+			
+			if($base[$clave]['profesion'] == 'plomero')
+			{
+			 $profesionales[$cnt++] = array("name" => $base[$clave]['name'], "surname" => $base[$clave]['surname'], "dni" => $base[$clave]['dni'],
+			 "birthdate" => $base[$clave]['birthdate'], "email" => $base[$clave]['email'], "ext" => $base[$clave]['ext'],
+			 "userkind" => $base[$clave]['userkind'], "profesion" => $base[$clave]['profesion'], "barrio" => $base[$clave]['barrio']);
+			}			
+		}
+		return view('profesiones', compact('profesionales'));
+	}
+	
+	public function dibujar_electricistas(){
+		require_once 'profesionesList.php'; //Hay un $serviceList = sarasa;
+		$base = usuariosModel::all();
+		$cnt = 0;
+		$profesionales = [];
+		foreach($base as $clave=>$valor){
+			
+			if($base[$clave]['profesion'] == 'electricista')
+			{
+			 $profesionales[$cnt++] = array("name" => $base[$clave]['name'], "surname" => $base[$clave]['surname'], "dni" => $base[$clave]['dni'],
+			 "birthdate" => $base[$clave]['birthdate'], "email" => $base[$clave]['email'], "ext" => $base[$clave]['ext'],
+			 "userkind" => $base[$clave]['userkind'], "profesion" => $base[$clave]['profesion'], "barrio" => $base[$clave]['barrio']);
+			}			
+		}
+		return view('profesiones', compact('profesionales'));
+	}
+	
+	public function dibujar_mmos(){
+		require_once 'profesionesList.php'; //Hay un $serviceList = sarasa;
+		$base = usuariosModel::all();
+		$cnt = 0;
+		$profesionales = [];
+		foreach($base as $clave=>$valor){
+			
+			if($base[$clave]['profesion'] == 'mmo')
+			{
+			 $profesionales[$cnt++] = array("name" => $base[$clave]['name'], "surname" => $base[$clave]['surname'], "dni" => $base[$clave]['dni'],
+			 "birthdate" => $base[$clave]['birthdate'], "email" => $base[$clave]['email'], "ext" => $base[$clave]['ext'],
+			 "userkind" => $base[$clave]['userkind'], "profesion" => $base[$clave]['profesion'], "barrio" => $base[$clave]['barrio']);
+			}			
+		}
+		return view('profesiones', compact('profesionales'));
+	}
+	
+	public function dibujar_arquitectos(){
+		require_once 'profesionesList.php'; //Hay un $serviceList = sarasa;
+		$base = usuariosModel::all();
+		$cnt = 0;
+		$profesionales = [];
+		foreach($base as $clave=>$valor){
+			
+			if($base[$clave]['profesion'] == 'arquitecto')
+			{
+			 $profesionales[$cnt++] = array("name" => $base[$clave]['name'], "surname" => $base[$clave]['surname'], "dni" => $base[$clave]['dni'],
+			 "birthdate" => $base[$clave]['birthdate'], "email" => $base[$clave]['email'], "ext" => $base[$clave]['ext'],
+			 "userkind" => $base[$clave]['userkind'], "profesion" => $base[$clave]['profesion'], "barrio" => $base[$clave]['barrio']);
+			}			
+		}
+		return view('profesiones', compact('profesionales'));
+	}
+	
 	public function leerbase(Request $request){
 		//echo "Este string se escribe en el controlador <br>";
 		$var_sesion = $request->session()->all();
