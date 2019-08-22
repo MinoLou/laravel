@@ -44,8 +44,10 @@
         <ul>
           <li><a class="nav-link nav1" href="preguntas">Preguntas Frecuentes</a></li>
           <li><a class="nav-link nav1" href="servicios2">Servicios</a></li>
-		  <li><a class='nav-link nav1' href='reg1'>Registracion</a></li>
-		  <li><a class='nav-link nav1' href='log1'>Login</a></li>
+		  <?php //session_start(); 
+		        if(!isset($_SESSION['name'])){
+					echo "<li><a class='nav-link nav1' href='reg1'>Registracion</a></li>
+						  <li><a class='nav-link nav1' href='log1'>Login</a></li>";} ?>
         </ul>
       </nav>
     </div>
@@ -92,8 +94,10 @@
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
-
+								
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="home">Mi ConstruWorld</a>
+									
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -115,3 +119,4 @@
             @yield('content')
         </main>
     </div>
+<?php require('footer.php'); ?>

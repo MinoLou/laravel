@@ -1,8 +1,8 @@
-@extends('layouts.apps')
+@extends('layouts.app')
 
 @section('content')
 <div class="containerb" >
-    <?php 
+    <?php session_start();
     if(isset($_SESSION['name'])){
 		echo "Iniciaste sesión como: " . $_SESSION['name'] . " " . $_SESSION['surname'] . " <br>DNI: " . $_SESSION['dni'] . " <br>Correo: " . $_SESSION['email'] . " ";
 	} else echo "No iniciaste sesión";
