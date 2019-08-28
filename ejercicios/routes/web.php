@@ -47,6 +47,11 @@ Route::get('/register', function () {
     return view('auth/register');
 });
 
+Route::get('/formu', function () {
+    return view('formulario');
+});
+
+
 //Fin pruebas ConstruWorld
 
 Route::get("/practica", "PracticaDH@listado");
@@ -57,6 +62,8 @@ Route::get("/paul", "maccaController@paul");
 
 Route::get("/agregar", "maccaController@agregar");
 
+Route::get("/modificar/{mandato}", "maccaController@modificar");
+
 Route::get("/servicios2", "maccaController@dibujar_servicios");
 
 Route::get("/borrar/{numero}", ['uses' =>'maccaController@borrar']);
@@ -65,3 +72,23 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
+
+Route::get("/ruta1", "maccaController@func1");
+
+Route::get("/direruta1", "maccaController@direc1");
+
+Route::get("/direruta2", "maccaController@direc2");
+
+Route::get("/vistaform", "maccaController@formulario");
+
+Route::get("/recibevar", "maccaController@recibevar");
+
+Route::get('/formudb', function () {
+    return view('formudb');
+});
+
+Route::get("/escribebase", "maccaController@escribebase");
+
+Route::get("/modificabase", "maccaController@modificabase");
+
+Route::get("/borrabase", "maccaController@borrarbase");
